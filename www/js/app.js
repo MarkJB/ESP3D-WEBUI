@@ -407,7 +407,7 @@ function update_UI_firmware_target() {
       //document.getElementById('control_z_position_display').style.display = 'block';
       document.getElementById("control_z_position_label").innerHTML = "Zw";
       document.getElementById("zero_xyz_btn_txt").innerHTML += "Z";
-      grblzerocmd += " Z0";
+      // grblzerocmd += " Z0";  // This was causing a double Z0 to be send when zeroing axis
     } else {
       hideAxiscontrols();
       document.getElementById(
